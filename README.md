@@ -1,66 +1,64 @@
 # Getting Started with the Blazor Spinner Component
 
-The [Blazor Spinner](https://www.syncfusion.com/blazor-components/blazor-spinner?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples) denotes when long-running tasks are ongoing, tasks for which there is no information about their progress. A quick-start project that shows how to getting started with the Syncfusion Blazor Spinner component in a Blazor WebAssembly application. This project contains the code snippet to show and hide spinners and use other customizations.
+## Overview
+
+This sample demonstrates how to use the Syncfusion [Blazor Spinner](https://www.syncfusion.com/blazor-components/blazor-spinner?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples) component in a hosted Blazor WebAssembly application. The application shows how to display loading indicators while asynchronous or long-running operations are in progress so users receive immediate visual feedback. The sample also demonstrates controlling Spinner visibility and applying common appearance customizations used in real-world applications. It serves as a practical starting point for integrating loading experiences into Syncfusion Blazor applications.
+
+## Key Features
+
+- Renders multiple Syncfusion Blazor Spinner components using different spinner types, including the default Bootstrap5 style and `SpinnerType.Bootstrap`.
+- Uses the `Visible` property to control Spinner display during application execution.
+- Demonstrates two-way binding with `@bind-Visible` for dynamic Spinner visibility management.
+- Displays descriptive loading text using the `Label` property.
+- Customizes Spinner appearance through the `CssClass` property and custom CSS styling.
+- Applies custom Spinner color styling by targeting the Bootstrap5 Spinner SVG stroke.
+- Integrates Spinner functionality with the Syncfusion Tab component.
+- Uses the `Selecting` event to display a loading indicator while tab content is being switched.
+- Uses the `Selected` event to hide the loading indicator after tab navigation completes.
+- Demonstrates asynchronous loading behavior using `Task.Delay()` to simulate background processing.
+- Shows an alternative implementation approach using Spinner instance methods (`ShowAsync()` and `HideAsync()`) through component references.
+- Demonstrates overlay-style loading indicators using custom CSS classes and Spinner layering.
 
 ## Prerequisites
 
-* Visual Studio 2022
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
 
-## How to run the project
+## How to Run the Project
 
-* Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
-* Run the project.
+**Visual Studio 2022**
 
-## Features and Benefits
+1. Clone or download this repository.
+2. Open the `GettingStarted.sln` solution file.
+3. Restore all NuGet packages.
+4. Ensure the appropriate startup project is selected for the hosted Blazor WebAssembly application.
+5. Build the solution.
+6. Run the application using `Ctrl+F5`.
 
-## Customization
+**Visual Studio Code**
 
-The default appearance of the Blazor Spinner component can be [customized](https://blazor.syncfusion.com/documentation/spinner/customization?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples) by changing its color and stroke width. Also, you can set the z-index for Blazor spinners dynamically based on application scenarios.
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the startup project directory for the hosted application.
 
-## Visibility
+```bash
+dotnet restore
+dotnet run
+```
 
-With the use of two-way binding and asynchronous methods, you can simply adjust the visibility of the Blazor Spinner component.
+4. Open the application URL displayed in the terminal after the application starts.
 
-## Descriptive labels
+## Project Structure
 
-Labels that provide extra, valuable details about the task that is presently running should be included with the Blazor Spinner component.
+- `GettingStarted.sln` — Visual Studio solution file containing the sample projects.
+- `Client/Pages/Index.razor` — Main sample page demonstrating Spinner types, custom styling, labels, visibility binding, and integration with Tab events.
 
-## Related links
+## Support and Feedback
 
-[Learn More about Blazor Spinner](https://www.syncfusion.com/blazor-components/blazor-spinner?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Official Spinner documentation: https://blazor.syncfusion.com/documentation/spinner/getting-started
 
-[Download Free Trial](https://www.syncfusion.com/downloads/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
+## License
 
-[Pricing](https://www.syncfusion.com/sales/products/blazor?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Documentation](https://blazor.syncfusion.com/documentation/spinner/getting-started?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[View Demos](https://github.com/SyncfusionExamples/getting-started-with-the-blazor-spinner-component?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Community Forums](https://www.syncfusion.com/forums/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Suggest a feature or report a bug](https://www.syncfusion.com/feedback/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Online example](https://blazor.syncfusion.com/demos/spinner/default-functionalities?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Video Tutorials](https://www.syncfusion.com/tutorial-videos/blazor/spinner?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-[Knowledge base](https://www.syncfusion.com/kb/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)
-
-## About Syncfusion Blazor Components
-The Syncfusion's [Blazor components](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples) library offers over 70 UI components to work with Blazor server-side and client-side (Blazor WebAssembly) projects seamlessly. In addition to Spinner, we provide popular Blazor Components such as [DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Charts](https://www.syncfusion.com/blazor-components/blazor-charts?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Scheduler](https://www.syncfusion.com/blazor-components/blazor-scheduler?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Diagram](https://www.syncfusion.com/blazor-components/blazor-diagram?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), and [Word Processor](https://www.syncfusion.com/blazor-components/blazor-word-processor?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples).
-
-### About Syncfusion
-
-Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 28,000 customers and more than 1 million users, including large financial institutions, Fortune 500 companies, and global IT consultancies.
- 
-Today, we provide 1700+ components and frameworks for web ([Blazor](https://www.syncfusion.com/blazor-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [ASP.NET Core](https://www.syncfusion.com/aspnet-core-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [ASP.NET MVC](https://www.syncfusion.com/aspnet-mvc-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [ASP.NET WebForms](https://www.syncfusion.com/jquery/aspnet-webforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Angular](https://www.syncfusion.com/angular-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [React](https://www.syncfusion.com/react-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Vue](https://www.syncfusion.com/vue-ui-components?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), and [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)), mobile ([Xamarin](https://www.syncfusion.com/xamarin-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [JavaScript](https://www.syncfusion.com/javascript-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)), and desktop development ([WinForms](https://www.syncfusion.com/winforms-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [WPF](https://www.syncfusion.com/wpf-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [WinUI](https://www.syncfusion.com/winui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [Flutter](https://www.syncfusion.com/flutter-widgets?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), [UWP](https://www.syncfusion.com/uwp-ui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples), and [.NET MAUI](https://www.syncfusion.com/maui-controls?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples)). We provide ready-to-deploy enterprise software for dashboards, reports, data integration, and big data processing. Many customers have saved millions in licensing fees by deploying our software.
-
-<hr style="height:0.3px;border:none;color:lightgrey;background-color:lightgrey;" />
-
-<p align="center">
-<a href="mailto:sales@syncfusion.com?Subject=Syncfusion Blazor Spinner - GitHub" target="_top">sales@syncfusion.com</a> | <a href="https://www.syncfusion.com?utm_source=github&utm_medium=listing&utm_campaign=blazor-spinner-github-samples">www.syncfusion.com</a>| Toll Free: 1-888-9 DOTNET <br>
-</p>
-
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
